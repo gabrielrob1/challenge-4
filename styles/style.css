@@ -1,0 +1,197 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {   
+    background-color: hsl(30, 54%, 90%);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main {
+    margin-top:120px;
+    margin-bottom:120px;
+    background-color: white;
+    width: 737px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:40px;
+    font-size: 16px;
+}
+
+main ul,ol,p,dt {
+    color: rgb(0, 0, 0,0.6);
+}
+
+img {
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-style: normal;
+    font-size: 42px;
+    font-weight: 400;
+    margin:10px 0px 10px 0px;
+}
+
+.introduction p {
+    font-weight: 400;
+    margin-top:20px;
+    font-size:16px;
+}
+
+h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.time-information {
+    padding: 30px 0px 30px 30px;
+    margin-top:40px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius:10px;
+    box-shadow: 1px 1px 50px hsl(330, 100%, 98%);
+}
+
+.time-information h2 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color:hsl(332, 51%, 32%);
+
+}
+
+.time-information ul {
+  padding: 10px 30px 0px 30px;
+}
+
+section {
+    padding: 20px 0px 0px 0px;
+}
+
+section li {
+    font-weight: 400;
+}
+
+.content {
+    border-bottom: solid 1px hsl(30, 18%, 87%);
+}
+
+.content h2 {
+    padding-top:10px;
+}
+
+.content ol, ul {
+    padding:30px;
+}
+
+ul li {
+    line-height: 200%;
+}
+
+ol li {
+    margin-bottom: 12px;
+    padding-left:10px;
+    font-weight: 16px;
+}
+
+ol li::marker {
+    color:hsl(14, 45%, 36%);
+    font-weight:bold;
+}
+
+.content h2 {
+    color:hsl(14, 45%, 36%);
+}
+
+#nutrition {
+    border-style: none;
+}
+
+#nutrition h2 {
+    padding-bottom: 10px;
+}
+
+#nutrition p {
+    padding: 10px 0px 10px 0px;
+    font-weight: 400;
+}
+
+#nutrition div {
+    display: flex;
+    justify-content: left;
+}
+
+#nutrition dt,dd {
+    width:100px;
+    padding:15px 200px 15px 30px;
+    font-weight:400;
+}
+
+#nutrition em {
+    color : hsl(14, 45%, 36%);
+}
+
+#w-border {
+    border-bottom: solid 1px hsl(30, 18%, 87%);
+}
+
+em {
+    font-weight: 600;
+}
+
+@media (max-width: 817px) {
+
+
+  main {
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+    padding: 20px;
+    box-sizing: border-box; /* pour inclure padding dans la largeur */
+  }
+
+  img {
+    width: calc(100% + 40px);
+    height: auto;
+    margin:-20px -20px 0px -20px;
+    border-radius: 10px;
+  }
+
+  /* Empêche le texte de sortir de l’écran */
+  main, section, p, li, dt, dd {
+    overflow-wrap: break-word;
+  }
+
+  /* Ajuste le bloc préparation */
+  .time-information {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .time-information ul {
+    padding: 10px 15px;
+  }
+
+  /* Nutrition → pour éviter les débordements horizontaux */
+  #nutrition dt, 
+  #nutrition dd {
+    width: auto;
+    padding: 10px;
+    flex: 1; /* partage la place équitablement */
+  }
+
+  #nutrition div {
+    flex-wrap: wrap;
+  }
+}
